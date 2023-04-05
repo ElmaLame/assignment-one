@@ -255,6 +255,7 @@ h1 {
   color: #e75605;
   display: flex;
   align-items: center;
+  padding: 3vh;
 }
 /* second page */
 section {
