@@ -211,7 +211,11 @@ html {
   overflow: hidden;
 }
 /* first page */
-
+@media (max-width: 600px) {
+  section {
+    flex-direction: column;
+  }
+}
 header {
   background-image: url(./Haungry-Tummy-Assets/header-burger.png);
   background-size: contain;
@@ -223,7 +227,12 @@ ul {
   list-style-type: none;
   text-transform: uppercase;
   margin: 0 auto;
-  border: 2px solid red;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: black;
 }
 .navigation {
   padding: 2em 1.5em;
@@ -237,11 +246,10 @@ ul {
 h1 {
   font-size: 145px;
   color: #e75605;
-  border: 2px solid black;
   margin: 20vh 0 0 100vh;
   font-weight: bold;
 }
-.homeButton {
+.homeButton a {
   color: #e75605;
 }
 
@@ -255,7 +263,15 @@ h1 {
   color: #e75605;
   display: flex;
   align-items: center;
-  padding: 3vh;
+  padding: 5vh;
+  letter-spacing: 25px;
+}
+
+.socials li {
+  padding: 5px;
+}
+.socials a {
+  color: #e75605;
 }
 /* second page */
 section {
@@ -270,7 +286,6 @@ img {
   justify-content: flex-end;
 }
 p {
-  width: 50%;
   font-size: 20px;
 }
 section h2 {
@@ -280,7 +295,7 @@ section h2 {
   text-transform: uppercase;
 }
 button {
-  padding: 5px 10px;
+  padding: 10px 15px;
   font-weight: bold;
   font-size: 20px;
   text-transform: uppercase;
@@ -295,11 +310,20 @@ button:hover {
 }
 .menuText {
   width: 50%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 5%;
 }
 /*third part*/
 .experienceContainer {
   display: flex;
+  align-items: center;
 }
 .experienceText {
   width: 50%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0 5%;
 }
